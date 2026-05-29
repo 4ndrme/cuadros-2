@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+}
+
+.contenedor-principal {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /*Las 3 columnas base */
+    gap: 20px;
+}   
+
+.barra-navegacion {
+    grid-area: 1/1/2/4; /* Fila 1, de la columna 1 a la 4 */
+    height: 80px;
+    background-color: blanchedalmond;
+}
+
+.hero {
+    grid-area: 2/1/3/4; /* Fila 2, de la columna 1 a la 4 */
+    height: 200px;
+    background-color: aquamarine;
+}
+
+.sidebar {
+    grid-area: 3/1/4/2; /* Fila 3, empieza en columna 1 y termina en columna 2 */
+    background-color: lightgreen; 
+    min-height: 400px;
+}
+
+.rectangulo-grande {
+    grid-area: 3/2/4/4; /* Fila 3, empieza en columna 2 y termina en columna 4 */
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columnas iguales para las tarjetas */
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: palevioletred;
+    height: 180px;
+}
+
+.footer {
+    grid-area: 4/1/5/4; /* Fila 4, de la columna 1 a la 4 */
+    height: 80px;
+    background-color: lightgray;
+}
